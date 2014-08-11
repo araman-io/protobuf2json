@@ -2490,6 +2490,1814 @@ public final class SamplesProtos {
     // @@protoc_insertion_point(class_scope:tests.SimpleMessageWithRepeatedFields)
   }
 
+  public interface MessageWithKeyValueOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // repeated .tests.KeyValue record = 2;
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    java.util.List<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue> 
+        getRecordList();
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getRecord(int index);
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    int getRecordCount();
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    java.util.List<? extends thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> 
+        getRecordOrBuilderList();
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder getRecordOrBuilder(
+        int index);
+  }
+  /**
+   * Protobuf type {@code tests.MessageWithKeyValue}
+   */
+  public static final class MessageWithKeyValue extends
+      com.google.protobuf.GeneratedMessage
+      implements MessageWithKeyValueOrBuilder {
+    // Use MessageWithKeyValue.newBuilder() to construct.
+    private MessageWithKeyValue(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private MessageWithKeyValue(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final MessageWithKeyValue defaultInstance;
+    public static MessageWithKeyValue getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public MessageWithKeyValue getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private MessageWithKeyValue(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 18: {
+              if (!((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+                record_ = new java.util.ArrayList<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              record_.add(input.readMessage(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.PARSER, extensionRegistry));
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        if (((mutable_bitField0_ & 0x00000001) == 0x00000001)) {
+          record_ = java.util.Collections.unmodifiableList(record_);
+        }
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithKeyValue_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithKeyValue_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.class, thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<MessageWithKeyValue> PARSER =
+        new com.google.protobuf.AbstractParser<MessageWithKeyValue>() {
+      public MessageWithKeyValue parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new MessageWithKeyValue(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<MessageWithKeyValue> getParserForType() {
+      return PARSER;
+    }
+
+    // repeated .tests.KeyValue record = 2;
+    public static final int RECORD_FIELD_NUMBER = 2;
+    private java.util.List<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue> record_;
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    public java.util.List<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue> getRecordList() {
+      return record_;
+    }
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    public java.util.List<? extends thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> 
+        getRecordOrBuilderList() {
+      return record_;
+    }
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    public int getRecordCount() {
+      return record_.size();
+    }
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getRecord(int index) {
+      return record_.get(index);
+    }
+    /**
+     * <code>repeated .tests.KeyValue record = 2;</code>
+     */
+    public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder getRecordOrBuilder(
+        int index) {
+      return record_.get(index);
+    }
+
+    private void initFields() {
+      record_ = java.util.Collections.emptyList();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      for (int i = 0; i < record_.size(); i++) {
+        output.writeMessage(2, record_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      for (int i = 0; i < record_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, record_.get(i));
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code tests.MessageWithKeyValue}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValueOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithKeyValue_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithKeyValue_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.class, thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.Builder.class);
+      }
+
+      // Construct using thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRecordFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (recordBuilder_ == null) {
+          record_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        } else {
+          recordBuilder_.clear();
+        }
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithKeyValue_descriptor;
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue getDefaultInstanceForType() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.getDefaultInstance();
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue build() {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue buildPartial() {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue result = new thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue(this);
+        int from_bitField0_ = bitField0_;
+        if (recordBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001)) {
+            record_ = java.util.Collections.unmodifiableList(record_);
+            bitField0_ = (bitField0_ & ~0x00000001);
+          }
+          result.record_ = record_;
+        } else {
+          result.record_ = recordBuilder_.build();
+        }
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue) {
+          return mergeFrom((thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue other) {
+        if (other == thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue.getDefaultInstance()) return this;
+        if (recordBuilder_ == null) {
+          if (!other.record_.isEmpty()) {
+            if (record_.isEmpty()) {
+              record_ = other.record_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+            } else {
+              ensureRecordIsMutable();
+              record_.addAll(other.record_);
+            }
+            onChanged();
+          }
+        } else {
+          if (!other.record_.isEmpty()) {
+            if (recordBuilder_.isEmpty()) {
+              recordBuilder_.dispose();
+              recordBuilder_ = null;
+              record_ = other.record_;
+              bitField0_ = (bitField0_ & ~0x00000001);
+              recordBuilder_ = 
+                com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders ?
+                   getRecordFieldBuilder() : null;
+            } else {
+              recordBuilder_.addAllMessages(other.record_);
+            }
+          }
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // repeated .tests.KeyValue record = 2;
+      private java.util.List<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue> record_ =
+        java.util.Collections.emptyList();
+      private void ensureRecordIsMutable() {
+        if (!((bitField0_ & 0x00000001) == 0x00000001)) {
+          record_ = new java.util.ArrayList<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue>(record_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+
+      private com.google.protobuf.RepeatedFieldBuilder<
+          thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> recordBuilder_;
+
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public java.util.List<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue> getRecordList() {
+        if (recordBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(record_);
+        } else {
+          return recordBuilder_.getMessageList();
+        }
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public int getRecordCount() {
+        if (recordBuilder_ == null) {
+          return record_.size();
+        } else {
+          return recordBuilder_.getCount();
+        }
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getRecord(int index) {
+        if (recordBuilder_ == null) {
+          return record_.get(index);
+        } else {
+          return recordBuilder_.getMessage(index);
+        }
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder setRecord(
+          int index, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue value) {
+        if (recordBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRecordIsMutable();
+          record_.set(index, value);
+          onChanged();
+        } else {
+          recordBuilder_.setMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder setRecord(
+          int index, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder builderForValue) {
+        if (recordBuilder_ == null) {
+          ensureRecordIsMutable();
+          record_.set(index, builderForValue.build());
+          onChanged();
+        } else {
+          recordBuilder_.setMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder addRecord(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue value) {
+        if (recordBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRecordIsMutable();
+          record_.add(value);
+          onChanged();
+        } else {
+          recordBuilder_.addMessage(value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder addRecord(
+          int index, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue value) {
+        if (recordBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          ensureRecordIsMutable();
+          record_.add(index, value);
+          onChanged();
+        } else {
+          recordBuilder_.addMessage(index, value);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder addRecord(
+          thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder builderForValue) {
+        if (recordBuilder_ == null) {
+          ensureRecordIsMutable();
+          record_.add(builderForValue.build());
+          onChanged();
+        } else {
+          recordBuilder_.addMessage(builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder addRecord(
+          int index, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder builderForValue) {
+        if (recordBuilder_ == null) {
+          ensureRecordIsMutable();
+          record_.add(index, builderForValue.build());
+          onChanged();
+        } else {
+          recordBuilder_.addMessage(index, builderForValue.build());
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder addAllRecord(
+          java.lang.Iterable<? extends thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue> values) {
+        if (recordBuilder_ == null) {
+          ensureRecordIsMutable();
+          super.addAll(values, record_);
+          onChanged();
+        } else {
+          recordBuilder_.addAllMessages(values);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder clearRecord() {
+        if (recordBuilder_ == null) {
+          record_ = java.util.Collections.emptyList();
+          bitField0_ = (bitField0_ & ~0x00000001);
+          onChanged();
+        } else {
+          recordBuilder_.clear();
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public Builder removeRecord(int index) {
+        if (recordBuilder_ == null) {
+          ensureRecordIsMutable();
+          record_.remove(index);
+          onChanged();
+        } else {
+          recordBuilder_.remove(index);
+        }
+        return this;
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder getRecordBuilder(
+          int index) {
+        return getRecordFieldBuilder().getBuilder(index);
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder getRecordOrBuilder(
+          int index) {
+        if (recordBuilder_ == null) {
+          return record_.get(index);  } else {
+          return recordBuilder_.getMessageOrBuilder(index);
+        }
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public java.util.List<? extends thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> 
+           getRecordOrBuilderList() {
+        if (recordBuilder_ != null) {
+          return recordBuilder_.getMessageOrBuilderList();
+        } else {
+          return java.util.Collections.unmodifiableList(record_);
+        }
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder addRecordBuilder() {
+        return getRecordFieldBuilder().addBuilder(
+            thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder addRecordBuilder(
+          int index) {
+        return getRecordFieldBuilder().addBuilder(
+            index, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance());
+      }
+      /**
+       * <code>repeated .tests.KeyValue record = 2;</code>
+       */
+      public java.util.List<thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder> 
+           getRecordBuilderList() {
+        return getRecordFieldBuilder().getBuilderList();
+      }
+      private com.google.protobuf.RepeatedFieldBuilder<
+          thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> 
+          getRecordFieldBuilder() {
+        if (recordBuilder_ == null) {
+          recordBuilder_ = new com.google.protobuf.RepeatedFieldBuilder<
+              thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder>(
+                  record_,
+                  ((bitField0_ & 0x00000001) == 0x00000001),
+                  getParentForChildren(),
+                  isClean());
+          record_ = null;
+        }
+        return recordBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:tests.MessageWithKeyValue)
+    }
+
+    static {
+      defaultInstance = new MessageWithKeyValue(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:tests.MessageWithKeyValue)
+  }
+
+  public interface MessageWithJustOneKeyValueOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // optional .tests.KeyValue record = 2;
+    /**
+     * <code>optional .tests.KeyValue record = 2;</code>
+     */
+    boolean hasRecord();
+    /**
+     * <code>optional .tests.KeyValue record = 2;</code>
+     */
+    thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getRecord();
+    /**
+     * <code>optional .tests.KeyValue record = 2;</code>
+     */
+    thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder getRecordOrBuilder();
+  }
+  /**
+   * Protobuf type {@code tests.MessageWithJustOneKeyValue}
+   */
+  public static final class MessageWithJustOneKeyValue extends
+      com.google.protobuf.GeneratedMessage
+      implements MessageWithJustOneKeyValueOrBuilder {
+    // Use MessageWithJustOneKeyValue.newBuilder() to construct.
+    private MessageWithJustOneKeyValue(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private MessageWithJustOneKeyValue(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final MessageWithJustOneKeyValue defaultInstance;
+    public static MessageWithJustOneKeyValue getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public MessageWithJustOneKeyValue getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private MessageWithJustOneKeyValue(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 18: {
+              thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder subBuilder = null;
+              if (((bitField0_ & 0x00000001) == 0x00000001)) {
+                subBuilder = record_.toBuilder();
+              }
+              record_ = input.readMessage(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.PARSER, extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(record_);
+                record_ = subBuilder.buildPartial();
+              }
+              bitField0_ |= 0x00000001;
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithJustOneKeyValue_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithJustOneKeyValue_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.class, thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<MessageWithJustOneKeyValue> PARSER =
+        new com.google.protobuf.AbstractParser<MessageWithJustOneKeyValue>() {
+      public MessageWithJustOneKeyValue parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new MessageWithJustOneKeyValue(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<MessageWithJustOneKeyValue> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional .tests.KeyValue record = 2;
+    public static final int RECORD_FIELD_NUMBER = 2;
+    private thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue record_;
+    /**
+     * <code>optional .tests.KeyValue record = 2;</code>
+     */
+    public boolean hasRecord() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional .tests.KeyValue record = 2;</code>
+     */
+    public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getRecord() {
+      return record_;
+    }
+    /**
+     * <code>optional .tests.KeyValue record = 2;</code>
+     */
+    public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder getRecordOrBuilder() {
+      return record_;
+    }
+
+    private void initFields() {
+      record_ = thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance();
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeMessage(2, record_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(2, record_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code tests.MessageWithJustOneKeyValue}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValueOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithJustOneKeyValue_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithJustOneKeyValue_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.class, thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.Builder.class);
+      }
+
+      // Construct using thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+          getRecordFieldBuilder();
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        if (recordBuilder_ == null) {
+          record_ = thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance();
+        } else {
+          recordBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_MessageWithJustOneKeyValue_descriptor;
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue getDefaultInstanceForType() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.getDefaultInstance();
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue build() {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue buildPartial() {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue result = new thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        if (recordBuilder_ == null) {
+          result.record_ = record_;
+        } else {
+          result.record_ = recordBuilder_.build();
+        }
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue) {
+          return mergeFrom((thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue other) {
+        if (other == thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue.getDefaultInstance()) return this;
+        if (other.hasRecord()) {
+          mergeRecord(other.getRecord());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // optional .tests.KeyValue record = 2;
+      private thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue record_ = thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance();
+      private com.google.protobuf.SingleFieldBuilder<
+          thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> recordBuilder_;
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public boolean hasRecord() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getRecord() {
+        if (recordBuilder_ == null) {
+          return record_;
+        } else {
+          return recordBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public Builder setRecord(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue value) {
+        if (recordBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          record_ = value;
+          onChanged();
+        } else {
+          recordBuilder_.setMessage(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public Builder setRecord(
+          thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder builderForValue) {
+        if (recordBuilder_ == null) {
+          record_ = builderForValue.build();
+          onChanged();
+        } else {
+          recordBuilder_.setMessage(builderForValue.build());
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public Builder mergeRecord(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue value) {
+        if (recordBuilder_ == null) {
+          if (((bitField0_ & 0x00000001) == 0x00000001) &&
+              record_ != thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance()) {
+            record_ =
+              thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.newBuilder(record_).mergeFrom(value).buildPartial();
+          } else {
+            record_ = value;
+          }
+          onChanged();
+        } else {
+          recordBuilder_.mergeFrom(value);
+        }
+        bitField0_ |= 0x00000001;
+        return this;
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public Builder clearRecord() {
+        if (recordBuilder_ == null) {
+          record_ = thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance();
+          onChanged();
+        } else {
+          recordBuilder_.clear();
+        }
+        bitField0_ = (bitField0_ & ~0x00000001);
+        return this;
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder getRecordBuilder() {
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return getRecordFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder getRecordOrBuilder() {
+        if (recordBuilder_ != null) {
+          return recordBuilder_.getMessageOrBuilder();
+        } else {
+          return record_;
+        }
+      }
+      /**
+       * <code>optional .tests.KeyValue record = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilder<
+          thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder> 
+          getRecordFieldBuilder() {
+        if (recordBuilder_ == null) {
+          recordBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder>(
+                  record_,
+                  getParentForChildren(),
+                  isClean());
+          record_ = null;
+        }
+        return recordBuilder_;
+      }
+
+      // @@protoc_insertion_point(builder_scope:tests.MessageWithJustOneKeyValue)
+    }
+
+    static {
+      defaultInstance = new MessageWithJustOneKeyValue(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:tests.MessageWithJustOneKeyValue)
+  }
+
+  public interface KeyValueOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+
+    // optional string key = 1;
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    boolean hasKey();
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    java.lang.String getKey();
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    com.google.protobuf.ByteString
+        getKeyBytes();
+
+    // optional string value = 2;
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    boolean hasValue();
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    java.lang.String getValue();
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    com.google.protobuf.ByteString
+        getValueBytes();
+  }
+  /**
+   * Protobuf type {@code tests.KeyValue}
+   */
+  public static final class KeyValue extends
+      com.google.protobuf.GeneratedMessage
+      implements KeyValueOrBuilder {
+    // Use KeyValue.newBuilder() to construct.
+    private KeyValue(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private KeyValue(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final KeyValue defaultInstance;
+    public static KeyValue getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public KeyValue getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private KeyValue(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 10: {
+              bitField0_ |= 0x00000001;
+              key_ = input.readBytes();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              value_ = input.readBytes();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_KeyValue_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_KeyValue_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.class, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<KeyValue> PARSER =
+        new com.google.protobuf.AbstractParser<KeyValue>() {
+      public KeyValue parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new KeyValue(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<KeyValue> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    // optional string key = 1;
+    public static final int KEY_FIELD_NUMBER = 1;
+    private java.lang.Object key_;
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public boolean hasKey() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public java.lang.String getKey() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          key_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string key = 1;</code>
+     */
+    public com.google.protobuf.ByteString
+        getKeyBytes() {
+      java.lang.Object ref = key_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        key_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    // optional string value = 2;
+    public static final int VALUE_FIELD_NUMBER = 2;
+    private java.lang.Object value_;
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public boolean hasValue() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public java.lang.String getValue() {
+      java.lang.Object ref = value_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        if (bs.isValidUtf8()) {
+          value_ = s;
+        }
+        return s;
+      }
+    }
+    /**
+     * <code>optional string value = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getValueBytes() {
+      java.lang.Object ref = value_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        value_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private void initFields() {
+      key_ = "";
+      value_ = "";
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeBytes(1, getKeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getValueBytes());
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(1, getKeyBytes());
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getValueBytes());
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code tests.KeyValue}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValueOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_KeyValue_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_KeyValue_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.class, thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.Builder.class);
+      }
+
+      // Construct using thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        key_ = "";
+        bitField0_ = (bitField0_ & ~0x00000001);
+        value_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.internal_static_tests_KeyValue_descriptor;
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue getDefaultInstanceForType() {
+        return thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance();
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue build() {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue buildPartial() {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue result = new thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.key_ = key_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.value_ = value_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue) {
+          return mergeFrom((thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue other) {
+        if (other == thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue.getDefaultInstance()) return this;
+        if (other.hasKey()) {
+          bitField0_ |= 0x00000001;
+          key_ = other.key_;
+          onChanged();
+        }
+        if (other.hasValue()) {
+          bitField0_ |= 0x00000002;
+          value_ = other.value_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      // optional string key = 1;
+      private java.lang.Object key_ = "";
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public boolean hasKey() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public java.lang.String getKey() {
+        java.lang.Object ref = key_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          key_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public com.google.protobuf.ByteString
+          getKeyBytes() {
+        java.lang.Object ref = key_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          key_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKey(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder clearKey() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        key_ = getDefaultInstance().getKey();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string key = 1;</code>
+       */
+      public Builder setKeyBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000001;
+        key_ = value;
+        onChanged();
+        return this;
+      }
+
+      // optional string value = 2;
+      private java.lang.Object value_ = "";
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public boolean hasValue() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public java.lang.String getValue() {
+        java.lang.Object ref = value_;
+        if (!(ref instanceof java.lang.String)) {
+          java.lang.String s = ((com.google.protobuf.ByteString) ref)
+              .toStringUtf8();
+          value_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public com.google.protobuf.ByteString
+          getValueBytes() {
+        java.lang.Object ref = value_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          value_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder setValue(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        value_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder clearValue() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        value_ = getDefaultInstance().getValue();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional string value = 2;</code>
+       */
+      public Builder setValueBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        value_ = value;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:tests.KeyValue)
+    }
+
+    static {
+      defaultInstance = new KeyValue(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:tests.KeyValue)
+  }
+
   public interface MessageWithAnotherMessageOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
@@ -6954,6 +8762,21 @@ public final class SamplesProtos {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_tests_SimpleMessageWithRepeatedFields_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_tests_MessageWithKeyValue_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_tests_MessageWithKeyValue_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_tests_MessageWithJustOneKeyValue_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_tests_MessageWithJustOneKeyValue_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_tests_KeyValue_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_tests_KeyValue_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_tests_MessageWithAnotherMessage_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -6990,21 +8813,25 @@ public final class SamplesProtos {
       "eWithRepeatedFields\022\n\n\002id\030\002 \001(\005\022\r\n\005title" +
       "\030\001 \001(\t\022\016\n\006posted\030\003 \001(\010\022\014\n\004rate\030\004 \001(\002\022\n\n\002" +
       "pi\030\005 \001(\001\022\014\n\004tags\030\006 \003(\t\022\022\n\ncomment_id\030\007 \003" +
-      "(\005\"\241\001\n\031MessageWithAnotherMessage\022\n\n\002id\030\002" +
-      " \001(\005\022\r\n\005title\030\001 \001(\t\022\016\n\006posted\030\003 \001(\010\022\014\n\004r",
-      "ate\030\004 \001(\002\022\n\n\002pi\030\005 \001(\001\022\014\n\004tags\030\006 \003(\t\022\022\n\nc" +
-      "omment_id\030\007 \003(\005\022\035\n\006person\030\010 \001(\0132\r.tests." +
-      "Person\"\210\001\n\032MessageWithRepeatedMessage\022\n\n" +
-      "\002id\030\002 \001(\005\022\r\n\005title\030\001 \001(\t\022\014\n\004tags\030\006 \003(\t\022\022" +
-      "\n\ncomment_id\030\007 \003(\005\022\016\n\006posted\030\003 \001(\010\022\035\n\006pe" +
-      "rson\030\010 \003(\0132\r.tests.Person\"\324\001\n\006Person\022\014\n\004" +
-      "name\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email\030\003 \001(\t\022(\n" +
-      "\005phone\030\004 \003(\0132\031.tests.Person.PhoneNumber\032" +
-      "J\n\013PhoneNumber\022\016\n\006number\030\001 \002(\t\022+\n\004type\030\002" +
-      " \001(\0162\027.tests.Person.PhoneType:\004HOME\"+\n\tP",
-      "honeType\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002" +
-      "B1\n thoughtwok.protobuf.to.json.testB\rSa" +
-      "mplesProtos"
+      "(\005\"6\n\023MessageWithKeyValue\022\037\n\006record\030\002 \003(" +
+      "\0132\017.tests.KeyValue\"=\n\032MessageWithJustOne",
+      "KeyValue\022\037\n\006record\030\002 \001(\0132\017.tests.KeyValu" +
+      "e\"&\n\010KeyValue\022\013\n\003key\030\001 \001(\t\022\r\n\005value\030\002 \001(" +
+      "\t\"\241\001\n\031MessageWithAnotherMessage\022\n\n\002id\030\002 " +
+      "\001(\005\022\r\n\005title\030\001 \001(\t\022\016\n\006posted\030\003 \001(\010\022\014\n\004ra" +
+      "te\030\004 \001(\002\022\n\n\002pi\030\005 \001(\001\022\014\n\004tags\030\006 \003(\t\022\022\n\nco" +
+      "mment_id\030\007 \003(\005\022\035\n\006person\030\010 \001(\0132\r.tests.P" +
+      "erson\"\210\001\n\032MessageWithRepeatedMessage\022\n\n\002" +
+      "id\030\002 \001(\005\022\r\n\005title\030\001 \001(\t\022\014\n\004tags\030\006 \003(\t\022\022\n" +
+      "\ncomment_id\030\007 \003(\005\022\016\n\006posted\030\003 \001(\010\022\035\n\006per" +
+      "son\030\010 \003(\0132\r.tests.Person\"\324\001\n\006Person\022\014\n\004n",
+      "ame\030\001 \002(\t\022\n\n\002id\030\002 \002(\005\022\r\n\005email\030\003 \001(\t\022(\n\005" +
+      "phone\030\004 \003(\0132\031.tests.Person.PhoneNumber\032J" +
+      "\n\013PhoneNumber\022\016\n\006number\030\001 \002(\t\022+\n\004type\030\002 " +
+      "\001(\0162\027.tests.Person.PhoneType:\004HOME\"+\n\tPh" +
+      "oneType\022\n\n\006MOBILE\020\000\022\010\n\004HOME\020\001\022\010\n\004WORK\020\002B" +
+      "1\n thoughtwok.protobuf.to.json.testB\rSam" +
+      "plesProtos"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -7029,20 +8856,38 @@ public final class SamplesProtos {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_tests_SimpleMessageWithRepeatedFields_descriptor,
               new java.lang.String[] { "Id", "Title", "Posted", "Rate", "Pi", "Tags", "CommentId", });
-          internal_static_tests_MessageWithAnotherMessage_descriptor =
+          internal_static_tests_MessageWithKeyValue_descriptor =
             getDescriptor().getMessageTypes().get(3);
+          internal_static_tests_MessageWithKeyValue_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_tests_MessageWithKeyValue_descriptor,
+              new java.lang.String[] { "Record", });
+          internal_static_tests_MessageWithJustOneKeyValue_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_tests_MessageWithJustOneKeyValue_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_tests_MessageWithJustOneKeyValue_descriptor,
+              new java.lang.String[] { "Record", });
+          internal_static_tests_KeyValue_descriptor =
+            getDescriptor().getMessageTypes().get(5);
+          internal_static_tests_KeyValue_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_tests_KeyValue_descriptor,
+              new java.lang.String[] { "Key", "Value", });
+          internal_static_tests_MessageWithAnotherMessage_descriptor =
+            getDescriptor().getMessageTypes().get(6);
           internal_static_tests_MessageWithAnotherMessage_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_tests_MessageWithAnotherMessage_descriptor,
               new java.lang.String[] { "Id", "Title", "Posted", "Rate", "Pi", "Tags", "CommentId", "Person", });
           internal_static_tests_MessageWithRepeatedMessage_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+            getDescriptor().getMessageTypes().get(7);
           internal_static_tests_MessageWithRepeatedMessage_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_tests_MessageWithRepeatedMessage_descriptor,
               new java.lang.String[] { "Id", "Title", "Tags", "CommentId", "Posted", "Person", });
           internal_static_tests_Person_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(8);
           internal_static_tests_Person_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_tests_Person_descriptor,

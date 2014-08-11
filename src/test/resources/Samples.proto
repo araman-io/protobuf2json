@@ -26,6 +26,20 @@ message SimpleMessageWithRepeatedFields {
     repeated int32 comment_id = 7;
 }
 
+message MessageWithKeyValue {
+    repeated KeyValue record = 2;
+}
+
+
+message MessageWithJustOneKeyValue {
+    optional KeyValue record = 2;
+}
+
+message KeyValue {
+    optional string key = 1;
+    optional string value = 2;
+}
+
 message MessageWithAnotherMessage {
     optional int32 id = 2;
     optional string title = 1;
