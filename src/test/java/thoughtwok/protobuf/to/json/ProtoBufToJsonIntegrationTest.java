@@ -29,7 +29,7 @@ public class ProtoBufToJsonIntegrationTest {
     @Test
     public void shouldReturnEmptyJsonIfMessageIsNull() {
         try {
-            String s = ProtoBufToJson.DEFAULT_INSTANCE.print(null);
+            ProtoBufToJson.DEFAULT_INSTANCE.print(null);
             fail("should have thrown a null pointer exception");
         } catch(NullPointerException npe) {
             //expected

@@ -1,15 +1,17 @@
 package thoughtwok.protobuf.to.json.fragment.constructor.synsugar;
 
-import static org.junit.Assert.*;
 import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import java.util.Map.Entry;
 
 import org.json.JSONStringer;
 import org.junit.Test;
 
-import thoughtwok.protobuf.to.json.ProtoBufToJson;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue;
