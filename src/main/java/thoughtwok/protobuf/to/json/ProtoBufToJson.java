@@ -10,10 +10,25 @@ import thoughtwok.protobuf.to.json.fragment.constructor.FragmentConstructorEnum;
 import com.google.protobuf.Descriptors.FieldDescriptor;
 import com.google.protobuf.Message;
 
+/**
+ * Converts a <code>Message</code> to a JSON string
+ * 
+ * @author araman
+ */
 public class ProtoBufToJson {
 
+    /**
+     * an instance
+     */
     public static final ProtoBufToJson INSTANCE = new ProtoBufToJson();
 
+    /**
+     * iterates through all fields of a message and converts them to a json fragment using an implementation of
+     * <code>FragmentConstructor</code>
+     * 
+     * @param message
+     * @return
+     */
     public String print(Message message) {
 
         FragmentConstructor fragmentConstructor = null;

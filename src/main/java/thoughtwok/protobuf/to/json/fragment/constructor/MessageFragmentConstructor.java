@@ -9,6 +9,11 @@ import org.json.JSONStringer;
 import com.google.protobuf.Descriptors.FieldDescriptor;
 import com.google.protobuf.Message;
 
+/**
+ * a <code>FragmentConstructor</code> to construct a message
+ * @author araman
+ *
+ */
 public class MessageFragmentConstructor extends AbstractFragmentConstructor implements FragmentConstructor {
 
     public static final FragmentConstructor INSTANCE = new MessageFragmentConstructor();
