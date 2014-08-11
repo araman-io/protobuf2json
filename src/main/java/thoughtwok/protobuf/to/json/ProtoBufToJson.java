@@ -58,7 +58,7 @@ public class ProtoBufToJson {
             FieldDescriptor descriptor = fieldEntry.getKey();
             Object value = fieldEntry.getValue();
 
-            fragmentConstructor = this.factory.getFragmentConstructorForType(descriptor.getJavaType().name());
+            fragmentConstructor = this.factory.getFragmentConstructorForType(descriptor);
             fragmentConstructor.construct(descriptor, value, jsonStringer);
 
         }
