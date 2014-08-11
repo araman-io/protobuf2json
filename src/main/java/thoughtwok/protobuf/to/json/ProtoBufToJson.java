@@ -46,11 +46,7 @@ public class ProtoBufToJson {
         // initialize a json object
         JSONStringer jsonStringer = new JSONStringer();
 
-        // iterate through the message
-        if (message == null) {
-            return null;
-        }
-
+        //start the main object
         jsonStringer.object();
 
         // iterate through all the fields and call appropriate fragment constructors
@@ -63,6 +59,7 @@ public class ProtoBufToJson {
 
         }
 
+        //end the main object
         jsonStringer.endObject();
 
         return jsonStringer.toString();

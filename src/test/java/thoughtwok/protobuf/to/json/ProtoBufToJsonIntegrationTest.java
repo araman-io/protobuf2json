@@ -4,14 +4,19 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import thoughtwok.protobuf.to.json.fragment.constructor.synsugar.FragmentConstructorFactoryWithSyntaticSugar;
 import thoughtwok.protobuf.to.json.test.SamplesProtos;
+import thoughtwok.protobuf.to.json.test.SamplesProtos.KeyValue;
+import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithBoolField;
+import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithJustOneKeyValue;
+import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithKeyValue;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.Person;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.Person.PhoneNumber;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.Person.PhoneType;
 
 import com.google.protobuf.Message;
 
-public class ProtoBufToJsonTest {
+public class ProtoBufToJsonIntegrationTest {
 
     @Test
     public void shouldReturnInstance() {
@@ -84,4 +89,29 @@ public class ProtoBufToJsonTest {
         String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         System.out.println(s);
     }
+    
+    @Test
+    public void shouldOutputMessageWithBooleanFields() {
+        Message m = MessageWithBoolField.newBuilder().setAlive(true).addPresent(true).addPresent(true).addPresent(false).build();
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
+        
+        assertEquals("{\"alive\":true,\"present\":[true,true,false]}", s);
+    }
+    
+    @Test
+    public void testIntegration() {
+        Message aRecordWith1Keys =
+                MessageWithJustOneKeyValue.newBuilder()
+                        .setRecord(KeyValue.newBuilder().setKey("foo").setValue("bar").build()).build();
+
+        Message aRecordWithRepeatedKeyValue =
+                MessageWithKeyValue.newBuilder().addRecord(KeyValue.newBuilder().setKey("foo").setValue("bar").build())
+                        .addRecord(KeyValue.newBuilder().setKey("foo1").setValue("bar1").build()).build();
+
+        ProtoBufToJson bufToJson = new ProtoBufToJson(new FragmentConstructorFactoryWithSyntaticSugar());
+
+        assertEquals("{\"record\":{\"foo\":\"bar\"}}", bufToJson.print(aRecordWith1Keys));
+        assertEquals("{\"record\":{\"foo\":\"bar\",\"foo1\":\"bar1\"}}", bufToJson.print(aRecordWithRepeatedKeyValue));
+    }
+
 }

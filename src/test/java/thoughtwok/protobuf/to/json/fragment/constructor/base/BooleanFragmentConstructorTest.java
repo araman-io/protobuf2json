@@ -1,17 +1,18 @@
 package thoughtwok.protobuf.to.json.fragment.constructor.base;
 
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.anyBoolean;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 import java.util.Map.Entry;
 
 import org.json.JSONStringer;
 import org.junit.Test;
 
-import thoughtwok.protobuf.to.json.ProtoBufToJson;
 import thoughtwok.protobuf.to.json.fragment.constructor.FragmentConstructor;
-import thoughtwok.protobuf.to.json.fragment.constructor.base.BooleanFragmentConstuctor;
-import thoughtwok.protobuf.to.json.fragment.constructor.base.FragmentConstructorEnum;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithBoolField;
 
 import com.google.protobuf.Descriptors.FieldDescriptor;
@@ -56,12 +57,4 @@ public class BooleanFragmentConstructorTest {
         verify(js, never()).endObject();
     }
     
-    @Test
-    public void shouldOutputMessageWithBooleanFields() {
-        Message m = MessageWithBoolField.newBuilder().setAlive(true).addPresent(true).addPresent(true).addPresent(false).build();
-        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
-        
-        assertEquals("{\"alive\":true,\"present\":[true,true,false]}", s);
-    }
-
 }

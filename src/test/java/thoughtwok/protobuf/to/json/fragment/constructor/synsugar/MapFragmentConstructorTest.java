@@ -82,20 +82,4 @@ public class MapFragmentConstructorTest {
         verify(jsonStringer, never()).endArray();
     }
 
-    @Test
-    public void testIntegration() {
-        Message aRecordWith1Keys =
-                MessageWithJustOneKeyValue.newBuilder()
-                        .setRecord(KeyValue.newBuilder().setKey("foo").setValue("bar").build()).build();
-
-        Message aRecordWithRepeatedKeyValue =
-                MessageWithKeyValue.newBuilder().addRecord(KeyValue.newBuilder().setKey("foo").setValue("bar").build())
-                        .addRecord(KeyValue.newBuilder().setKey("foo1").setValue("bar1").build()).build();
-
-        ProtoBufToJson bufToJson = new ProtoBufToJson(new FragmentConstructorFactoryWithSyntaticSugar());
-
-        assertEquals("{\"record\":{\"foo\":\"bar\"}}", bufToJson.print(aRecordWith1Keys));
-        assertEquals("{\"record\":{\"foo\":\"bar\",\"foo1\":\"bar1\"}}", bufToJson.print(aRecordWithRepeatedKeyValue));
-    }
-
 }

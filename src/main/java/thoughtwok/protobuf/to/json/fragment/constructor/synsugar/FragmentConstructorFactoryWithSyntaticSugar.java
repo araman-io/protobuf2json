@@ -5,6 +5,9 @@ import com.google.protobuf.Descriptors.FieldDescriptor;
 import thoughtwok.protobuf.to.json.fragment.constructor.FragmentConstructor;
 import thoughtwok.protobuf.to.json.fragment.constructor.base.DefaultFragmentConstructorFactory;
 
+/**
+ * A 
+ */
 public class FragmentConstructorFactoryWithSyntaticSugar extends DefaultFragmentConstructorFactory {
 
     @Override
