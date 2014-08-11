@@ -1,6 +1,8 @@
 package thoughtwok.protobuf.to.json;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Test;
 
@@ -26,8 +28,13 @@ public class ProtoBufToJsonIntegrationTest {
 
     @Test
     public void shouldReturnEmptyJsonIfMessageIsNull() {
-        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(null);
-        assertNull(s);
+        try {
+            String s = ProtoBufToJson.DEFAULT_INSTANCE.print(null);
+            fail("should have thrown a null pointer exception");
+        } catch(NullPointerException npe) {
+            //expected
+        }
+        
     }
 
     @Test
