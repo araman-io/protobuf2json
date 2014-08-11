@@ -1,4 +1,6 @@
-package thoughtwok.protobuf.to.json.fragment.constructor;
+package thoughtwok.protobuf.to.json.fragment.constructor.base;
+
+import thoughtwok.protobuf.to.json.fragment.constructor.FragmentConstructor;
 
 /**
  * Maps the legal values of <code>Descriptors.FieldDescriptor.JavaType </code> to its appropriate

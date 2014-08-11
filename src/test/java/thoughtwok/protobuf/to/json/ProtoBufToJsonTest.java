@@ -15,20 +15,20 @@ public class ProtoBufToJsonTest {
 
     @Test
     public void shouldReturnInstance() {
-        Object o = ProtoBufToJson.INSTANCE;
+        Object o = ProtoBufToJson.DEFAULT_INSTANCE;
         assertTrue(o instanceof ProtoBufToJson);
     }
 
     @Test
     public void shouldReturnEmptyJsonIfMessageIsNull() {
-        String s = ProtoBufToJson.INSTANCE.print(null);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(null);
         assertNull(s);
     }
 
     @Test
     public void shouldPrintSimpleKeyValue() {
         Person p = SamplesProtos.Person.newBuilder().setName("foobar").setId(1).build();
-        String s = ProtoBufToJson.INSTANCE.print(p);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(p);
         System.out.println(s);
     }
 
@@ -37,7 +37,7 @@ public class ProtoBufToJsonTest {
         Message m =
                 SamplesProtos.SimpleMessage.newBuilder().setId(1).setTitle("my post")
                         .setPosted(Boolean.TRUE.booleanValue()).setRate(3.1415f).setPi(Math.PI).build();
-        String s = ProtoBufToJson.INSTANCE.print(m);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         System.out.println(s);
     }
     
@@ -47,7 +47,7 @@ public class ProtoBufToJsonTest {
                 SamplesProtos.SimpleMessageWithRepeatedFields.newBuilder().setId(1).setTitle("my post")
                         .setPosted(Boolean.TRUE.booleanValue()).setRate(3.1415f).setPi(Math.PI)
                         .addTags("foo").addTags("bar").addCommentId(1212).addCommentId(13432452).addCommentId(56).build();
-        String s = ProtoBufToJson.INSTANCE.print(m);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         System.out.println(s);
     }
 
@@ -58,7 +58,7 @@ public class ProtoBufToJsonTest {
                         .setPosted(Boolean.TRUE.booleanValue()).setRate(3.1415f).setPi(Math.PI)
                         .addTags("foo").addTags("bar").addCommentId(1212).addCommentId(13432452).addCommentId(56)
                         .setPerson(Person.newBuilder().setId(89797).setName("foo bar inc").setEmail("foo@bar.com").build()).build();
-        String s = ProtoBufToJson.INSTANCE.print(m);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         System.out.println(s);
     }
     
@@ -70,7 +70,7 @@ public class ProtoBufToJsonTest {
                         .addPerson(Person.newBuilder().setId(89797).setName("foo bar inc").setEmail("foo@bar.com").build())
                         .addPerson(Person.newBuilder().setId(89797).setName("bar foo inc").setEmail("bar@foo.com").build())
                         .build();
-        String s = ProtoBufToJson.INSTANCE.print(m);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         System.out.println(s);
     }
     
@@ -81,7 +81,7 @@ public class ProtoBufToJsonTest {
                         .setEmail("foo@bar.com").addPhone(PhoneNumber.newBuilder().setNumber("1234567890").setType(PhoneType.HOME).build())
                         .addPhone(PhoneNumber.newBuilder().setNumber("0998e7r9q8e78r6").setType(PhoneType.MOBILE).build())
                         .build();
-        String s = ProtoBufToJson.INSTANCE.print(m);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         System.out.println(s);
     }
 }

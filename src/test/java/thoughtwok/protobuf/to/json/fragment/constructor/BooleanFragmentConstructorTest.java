@@ -9,6 +9,8 @@ import org.json.JSONStringer;
 import org.junit.Test;
 
 import thoughtwok.protobuf.to.json.ProtoBufToJson;
+import thoughtwok.protobuf.to.json.fragment.constructor.base.BooleanFragmentConstuctor;
+import thoughtwok.protobuf.to.json.fragment.constructor.base.FragmentConstructorEnum;
 import thoughtwok.protobuf.to.json.test.SamplesProtos.MessageWithBoolField;
 
 import com.google.protobuf.Descriptors.FieldDescriptor;
@@ -56,7 +58,7 @@ public class BooleanFragmentConstructorTest {
     @Test
     public void shouldOutputMessageWithBooleanFields() {
         Message m = MessageWithBoolField.newBuilder().setAlive(true).addPresent(true).addPresent(true).addPresent(false).build();
-        String s = ProtoBufToJson.INSTANCE.print(m);
+        String s = ProtoBufToJson.DEFAULT_INSTANCE.print(m);
         
         assertEquals("{\"alive\":true,\"present\":[true,true,false]}", s);
     }

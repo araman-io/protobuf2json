@@ -1,9 +1,11 @@
-package thoughtwok.protobuf.to.json.fragment.constructor;
+package thoughtwok.protobuf.to.json.fragment.constructor.base;
 
 import java.util.Iterator;
 import java.util.List;
 
 import org.json.JSONStringer;
+
+import thoughtwok.protobuf.to.json.fragment.constructor.FragmentConstructor;
 
 import com.google.protobuf.Descriptors.EnumValueDescriptor;
 import com.google.protobuf.Descriptors.FieldDescriptor;

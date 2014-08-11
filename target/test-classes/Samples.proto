@@ -1,0 +1,72 @@
+package tests;
+
+option java_package = "thoughtwok.protobuf.to.json.test";
+option java_outer_classname = "SamplesProtos";
+
+message MessageWithBoolField {
+    optional bool alive = 1;
+    repeated bool present = 2;
+}
+
+message SimpleMessage {
+    optional int32 id = 2;
+    optional string title = 1;
+    optional bool  posted = 3;
+    optional float rate = 4;
+    optional double pi = 5; 
+}
+
+message SimpleMessageWithRepeatedFields {
+    optional int32 id = 2;
+    optional string title = 1;
+    optional bool  posted = 3;
+    optional float rate = 4;
+    optional double pi = 5; 
+    repeated string tags = 6;
+    repeated int32 comment_id = 7;
+}
+
+message MessageWithAnotherMessage {
+    optional int32 id = 2;
+    optional string title = 1;
+    optional bool  posted = 3;
+    optional float rate = 4;
+    optional double pi = 5; 
+    repeated string tags = 6;
+    repeated int32 comment_id = 7;
+    optional Person person = 8;
+}
+
+message MessageWithRepeatedMessage {
+    optional int32 id = 2;
+    optional string title = 1;
+    repeated string tags = 6;
+    repeated int32 comment_id = 7;
+    optional bool  posted = 3;
+    repeated Person person = 8;
+}
+
+message Person {
+  required string name = 1;
+  required int32 id = 2;
+  optional string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    required string number = 1;
+    optional PhoneType type = 2 [default = HOME];
+  }
+
+  repeated PhoneNumber phone = 4;
+}
+
+/*
+message AddressBook {
+  repeated Person person = 1;
+}
+*/

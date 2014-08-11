@@ -1,6 +1,8 @@
-package thoughtwok.protobuf.to.json.fragment.constructor;
+package thoughtwok.protobuf.to.json.fragment.constructor.base;
 
 import org.json.JSONStringer;
+
+import thoughtwok.protobuf.to.json.fragment.constructor.FragmentConstructor;
 
 import com.google.protobuf.Descriptors.FieldDescriptor;
 
